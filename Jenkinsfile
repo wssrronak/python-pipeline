@@ -3,7 +3,7 @@ pipeline {
 		label 'python-pipeline'
 		}
 	stages {
-		stage ("pull scm python") {
+		stage ("pull scm python test") {
 			steps {
 				git branch: 'python', url: 'https://github.com/wssrronak/python-pipeline.git'
 				}
