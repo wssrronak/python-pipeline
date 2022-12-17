@@ -3,9 +3,9 @@ pipeline {
 		label 'python-pipeline'
 		}
 	stages {
-		stage ("pull scm") {
+		stage ("pull scm python") {
 			steps {
-				git ''
+				git branch: 'python', url: 'https://github.com/wssrronak/python-pipeline.git'
 				}
 			}
 		stage ("Build") {
